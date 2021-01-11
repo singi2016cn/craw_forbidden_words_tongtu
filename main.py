@@ -29,7 +29,7 @@ is_auto_login = True # 是否自动登录
 
 
 options = Options()
-# options.add_argument('--headless')
+options.add_argument('--headless')
 dr = webdriver.Chrome(executable_path=executable_path, options=options)
 dr.maximize_window()
 
