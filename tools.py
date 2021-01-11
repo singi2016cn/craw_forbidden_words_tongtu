@@ -11,8 +11,8 @@ def ocrCap(captcha):
 
 def pageData(html):
     res = []
-    for i in range(2, 102):
-        word = html.xpath('//*[@id="cloudLexicon"]/table/tbody/tr['+ str(i) +']/td[2]/div//text()')
+    for i in range(0, 50):
+        word = html.xpath('//*[@id="datagrid-row-r1-2-'+ str(i) +'"]/td[1]/div//text()')
         if len(word) == 0:
             break
         res.append(word[0].strip())
