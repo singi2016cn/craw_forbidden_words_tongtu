@@ -1,0 +1,7 @@
+/venv/
+/data/runtime/*
+!/data/runtime/.gitkeep
+/*.png
+/*.log
+/__pycache__/
+/.idea/
